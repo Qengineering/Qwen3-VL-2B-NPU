@@ -1,4 +1,4 @@
-# InternVL3 NPUQwen3-VL-2B NPU
+# Qwen3-VL-2B NPU
 ![Alt text](https://github.com/user-attachments/assets/6d297a34-c516-4cb1-be4a-bca471d40fa6)
 <br><br>**User**:\<image\>Describe the image.<br><br>
 **Answer**: This is a surreal and imaginative photograph of an astronaut on the Moon, set against the backdrop of Earth in space.
