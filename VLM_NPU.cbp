@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VLM_NPU" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VLM_NPU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="./Titanic.jpg ./models/internvl3-1b_vision_fp16.rknn ./models/internvl3-1b_w8a8.rkllm 2048 4096 3" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VLM_NPU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=gnu++17" />
+			<Add option="-fexceptions" />
+			<Add option="`pkg-config --cflags opencv4`" />
+			<Add directory="/usr/local/include/rockchip" />
+			<Add directory="/usr/local/include/" />
+		</Compiler>
+		<Linker>
+			<Add option="-O3" />
+			<Add option="`pkg-config --libs opencv4`" />
+			<Add option="-pthread" />
+			<Add option="-lpthread" />
+			<Add option="-lgflags" />
+			<Add library="/usr/local/lib/librknnrt.so" />
+			<Add library="/usr/local/lib/librkllmrt.so" />
+		</Linker>
+		<Unit filename="include/RK35llm.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/RK35llm.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
