@@ -84,7 +84,7 @@ $ sudo apt-get install cmake wget curl
 To install OpenCV on your SBC, follow the Raspberry Pi 4 [guide](https://qengineering.eu/install-opencv-on-raspberry-64-os.html).<br><br>
 Or, when you have no intentions to program code:
 ```
-$ sudo apt-get install lib-opencv-dev 
+$ sudo apt-get install libopencv-dev 
 ```
 ------------
 
