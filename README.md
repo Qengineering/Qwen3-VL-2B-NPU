@@ -100,7 +100,7 @@ We have provided the correct versions in the repo.<br>
 ```bash
 $ cd ./Qwen3-VL-2B-NPU/aarch64/library
 $ sudo cp ./*.so /usr/local/lib
-$ cd ./Qwen3-VL-2B-NPU/aarch64/include
+$ cd ../include
 $ sudo cp ./*.h /usr/local/include
 ```
 ### Download the LLM and VLM model.
@@ -147,7 +147,7 @@ This specifies the maximum total number of tokens the model can process in one g
 
 A typical command line can be:
 ```bash
-VLM_NPU ./Moon.jpg ./models/qwen3-vl-2b-vision_rk3588.rknn ./models/qwen3-vl-2b-instruct_w8a8_rk3588.rkllm 2048 4096
+./VLM_NPU ./Moon.jpg ./models/qwen3-vl-2b-vision_rk3588.rknn ./models/qwen3-vl-2b-instruct_w8a8_rk3588.rkllm 2048 4096
 ```
 The NewTokens (2048) and ContextLength (4096) are optional and can be omitted.
 ### Using the app.
