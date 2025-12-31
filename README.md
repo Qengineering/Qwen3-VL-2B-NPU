@@ -263,6 +263,12 @@ Let me know if you'd like this version to work with **user input**, **multiple t
 
 ------------
 
+## **[Rock5GPT](https://rock5gpt.qengineering.eu)**
+To get a taste, try our professional Qwen3 AI-chatbot running on a Rock 5C: https://rock5gpt.qengineering.eu
+<img width="815" height="1151" alt="Rock5GPT" src="https://github.com/user-attachments/assets/3ce5ad31-bc2b-4513-8ac9-42be793a86db" /><br>
+
+------------
+
 [![paypal](https://qengineering.eu/images/TipJarSmall4.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CPZTM5BB3FCYL) 
 
 
