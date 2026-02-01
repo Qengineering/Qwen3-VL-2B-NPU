@@ -49,6 +49,10 @@ All LLM models are quantized to **w8a8**, while the VLM vision encoders use **fp
 | --------------| :--: | :-----: | :-----: | :--------: | :-----: | :--------:  | :--------: |
 | [Qwen3-2B](https://github.com/Qengineering/Qwen3-VL-2B-NPU) | 3.1 | 21.9 | 2.6 | 10.0  | 0.9 | 448 x 448 | 11.5 |
 | [Qwen3-4B](https://github.com/Qengineering/Qwen3-VL-4B-NPU) | 8.7 | 49.6 | 5.6 | 10.6  | 1.1 | 448 x 448 | 5.7 |
+| [InternVL3.5-1B](https://github.com/Qengineering/InternVL3.5-1B-NPU) | 8.8 |  92 |   8.0 | 50.5    | 5.8 | 448 x 448 | 3.5 |
+| [InternVL3.5-2B](https://github.com/Qengineering/InternVL3.5-2B-NPU) | 5.4 |  50 |   8.0 | 5.9    | 0.8 | 448 x 448 | 5 |
+| [InternVL3.5-4B](https://github.com/Qengineering/InternVL3.5-4B-NPU) | 3.0 |  22 |   8.0 | 2.7    | 0.8 | 448 x 448 | 11.2 |
+| [InternVL3.5-8B](https://github.com/Qengineering/InternVL3.5-8B-NPU) | 1.9 |  8.3 |   8.0 | 1.5    | 0.8 | 448 x 448 | 24 |
 | [Qwen2.5-3B](https://github.com/Qengineering/Qwen2.5-VL-3B-NPU) | 4.8 | 48.3 |  4.0 | 17.9  | 1.8 | 392 x 392 | 7.0 |
 | [Qwen2-7B](https://github.com/Qengineering/Qwen2-VL-7B-NPU) | 8.7 | 86.6 |   34.5 | 37.1  | 20.7 | 392 x 392 | 3.7 |
 | [Qwen2-2.2B](https://github.com/Qengineering/Qwen2-VL-2B-NPU) | 3.3 | 29.1 |   2.5 | 17.1  | 1.7 | 392 x 392 | 12.5 |
@@ -61,8 +65,8 @@ All LLM models are quantized to **w8a8**, while the VLM vision encoders use **fp
 <sup>2</sup> When an llm/vlm model is loaded for the first time from your disk to RAM or NPU, it is called a cold start.<br>
 The duration depends on your OS, I/O transfer rate, and memory mapping.<br> 
 <sup>3</sup> Subsequent loading (warm start) takes advantage of the already mapped data in RAM. Mostly, only a few pointers need to be restored.<br><br>
-<img width="600" height="450" alt="Plot_1" src="https://github.com/user-attachments/assets/6dbb7d8a-c55b-49b4-ae5a-ac272aade60b" /><br>
-<img width="600" height="450" alt="Plot_2" src="https://github.com/user-attachments/assets/c4dd409b-2533-4ae0-942c-58fb3e8f5834" />
+<img width="600" height="450" alt="Plot_1" src="https://github.com/user-attachments/assets/2dde8d27-c8ae-474c-b845-4ed52bdc0785" /><br>
+<img width="600" height="450" alt="Plot_2" src="https://github.com/user-attachments/assets/0cf946d5-5458-4166-bc2b-fa1592ae4d6b" />
 
 ------------
 
